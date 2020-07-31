@@ -166,7 +166,7 @@ namespace VoidList
                             ImGui.InputText(reason, buff, 128);
                             if (ImGui.Button("Void Player"))
                             {
-                                voidList.Add(new Void(actor, System.Text.Encoding.Default.GetString(buff)));
+                                voidList.Add(new Void(actor, System.Text.Encoding.UTF8.GetString(buff)));
                                 buff = new byte[128];
                             }
                         }
